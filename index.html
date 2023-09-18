@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./btns.css">
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Helphify</title>
+
+    <style>
+
+.hero {
+  background: url(../mini_one/images/pexels-rdne-stock-project-6646974.jpg)
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero * {
+  z-index: 1;
+}
+
+
+    </style>
+
+    
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#main_menu">
+    <header class="hero">
+      <!-- Navigation -->
+      <nav
+        id="main_menu"
+        class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="./images/logo1.png" alt="Helphify Logo" width="150" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="mainMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li><a href="./index.html" class="nav-link">Home</a></li>
+              <li><a href="./about.html" class="nav-link">About</a></li>
+              <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
+
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >More</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="#section-camp" class="dropdown-item">Campaigns</a></li>
+                  <li>
+                    <a href="#categories" class="dropdown-item">Categories</a>
+                  </li>
+                  <li><a href="#whyus" class="dropdown-item">Why Us</a></li>
+                  <li><a href="#testimonies" class="dropdown-item">Testimonies</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact" class="nav-link">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <!-- Text Center  -->
+      <div class="text-1">
+        <div class="col">
+          <h1 class="fw-bold">
+            Where Help and <br />
+            Hope Meets.
+          </h1>
+          <p>Help others today.</p>
+          <a href="./sign_up.html" class="btn-main fw-semibold
+          ">Start</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- campaigns -->
+
+    <!-- editors Campaign -->
+
+    <section id="section-camp" class="mt-5">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="text-2">
+            <h2>Editor's Campaign</h2>
+          </div>
+        </div>
+
+        <div class="editor-camp">
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <div class="card" id="editor">
+                
+                <img
+                  src="./images/yolanda.jpg"
+                  class="card-img1"
+                  alt="Yolanda"
+                />
+                <div class="card-img-overlay">
+                  <div class="maintext">
+                    <h5 class="card-title">Yolanda Fund</h5>
+                    <p id="maincamp" class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <a href="#" class="btn-2nd">GIVE</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card" id="editor">
+                <img
+                  src="../mini_one/images/taaal.jpg"
+                  class="card-img1"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <div class="maintext">
+                    <h5 class="card-title">Taal Fund</h5>
+                    <p id="maincamp" class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <a href="#" class="btn-2nd">GIVE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3 mt-5">
+          <div class="text-2">
+            <h2>Trending Campaign</h2>
+          </div>
+        </div>
+
+        <!-- Trending -->
+
+        <!-- 1st card -->
+      <section class="trend-camp">
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./images/cancer.jpg"
+                alt="cancer"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Emily's Fight</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Omnis tempora sequi mollitia illo ut nihil!
+                </p>
+                <a href="#" class="btn-2nd">GIVE</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd card -->
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="../mini_one/images/dog1.jpg"
+                alt="dog"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">I need Home</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Omnis tempora sequi mollitia illo ut nihil!
+                </p>
+                <a href="#" class="btn-2nd">GIVE</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./images/mohamed-nohassi-hhSedyEULtQ-unsplash.jpg"
+                alt="Education"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">My Journey</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Omnis tempora sequi mollitia illo ut nihil!
+                </p>
+                <a href="#" class="btn-2nd">GIVE</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4rd card -->
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./images/larm-rmah-AEaTUnvneik-unsplash.jpg"
+                alt="Non-profit"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">EDR's Program</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Omnis tempora sequi mollitia illo ut nihil!
+                </p>
+                <a href="#" class="btn-2nd">GIVE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      
+      <div class="more">
+        <div class="row mb-3 mt-5">
+          <div class="text-mid text-center">
+            <a href="#" class="btn-main">See More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- steps -->
+
+    <div class="container pt-5">
+      <h2 class="" id="get-started">Get Started,</h2>
+      <p id="ez">Its super easy!</p>
+
+      <div class="row text-center pt-5">
+        <div class="col-md-4">
+          <div>
+            <img
+              src="./images/fundraise.png"
+              alt="fundraise"
+              width="80px
+            "
+            />
+            <div>
+              <h5 class="mt-2">Start a Campaign</h5>
+              <p>Create a Campaign and tell your story</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <img src="./images/chat.png" alt="social" width="80px" />
+            <div>
+              <h5 class="mt-2">Post and Share</h5>
+              <p>Share it on social media</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <img src="./images/revenue.png" alt="Donation" width="80px" />
+            <div>
+              <h5 class="mt-2">Manage Donation</h5>
+              <p>Withdraw funds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- categories -->
+
+    <div class="container">
+
+    <section id="categories">
+      <div class="row mb-3 mt-5">
+        <div class="text-2">
+          <h2 id="categories">Categories</h2>
+        </div>
+      </div>
+
+      <div class="row g-1 mt-5">
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img
+                src="./images/education.jpg"
+                class="card-img"
+                alt="education"
+              />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i
+                  class="fa-solid fa-graduation-cap fa-3x"
+                  style="color: #ffffff"
+                ></i>
+                <h5 class="card-title pt-2">EDUCATION</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="">
+          <div class="card">
+            <div id="category">
+              <img src="./images/church.jpg" class="card-img" alt="church" />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i class="fa-solid fa-church fa-3x" style="color: #ffffff"></i>
+                <h5 class="card-title pt-2">CHURCH</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="">
+          <div class="card">
+            <div id="category">
+              <img
+                src="./images/legal2.jpg
+              "
+                class="card-img"
+                alt="legal2"
+              />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i class="fa-solid fa-gavel fa-3x" style="color: #ffffff"></i>
+                <h5 class="card-title pt-2">LEGAL</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="">
+          <div class="card">
+            <div id="category">
+              <img src="./images/dog.jpg" class="card-img" alt="pets" />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i class="fa-solid fa-dog fa-3x" style="color: #ffffff"></i>
+                <h5 class="card-title pt-2">ANIMAL/PETS</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="">
+          <div class="card">
+            <div id="category">
+              <img
+                src="./images/nonprofit.jpg"
+                class="card-img"
+                alt="nonprofit"
+              />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i
+                  class="fa-solid fa-hand-holding-heart fa-3x"
+                  style="color: #ffffff"
+                ></i>
+                <h5 class="card-title pt-2">NON-PROFIT</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img src="./images/medical.jpg" class="card-img" alt="medical" />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i
+                  class="fa-solid fa-suitcase-medical fa-3x"
+                  style="color: #ffffff"
+                ></i>
+                <h5 class="card-title pt-2">MEDICAL</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img src="./images/child.jpg" class="card-img" alt="adoption" />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i class="fa-solid fa-child fa-3x" style="color: #ffffff"></i>
+                <h5 class="card-title pt-2">ADOPTION</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img src="./images/compe.jpg" class="card-img" alt="compe" />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i class="fa-solid fa-medal fa-3x" style="color: #ffffff"></i>
+                <h5 class="card-title pt-2">COMPETITIEVE</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img src="./images/events.jpg" class="card-img" alt="events" />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i
+                  class="fa-regular fa-calendar-days fa-3x"
+                  style="color: #ffffff"
+                ></i>
+                <h5 class="card-title pt-2">EVENTS</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img
+                src="./images/creative.jpg"
+                class="card-img"
+                alt="creative"
+              />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i
+                  class="fa-solid fa-paintbrush fa-3x"
+                  style="color: #ffffff"
+                ></i>
+                <h5 class="card-title pt-2">CREATIVE</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img
+                src="./images/birthdays.jpg"
+                class="card-img"
+                alt="birthdays"
+              />
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <i
+                  class="fa-solid fa-cake-candles fa-3x"
+                  style="color: #ffffff"
+                ></i>
+                <h5 class="card-title pt-2">CURRENT EVENTS</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+
+        <div class="col-md-2">
+          <a href="#">
+          <div class="card">
+            <div id="category">
+              <img src="./images/viewmore.jpg" class="card-img" alt="color"/>
+              <div
+                class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center"
+                style="color: #ffffff"
+              >
+                <h5 class="card-title pt-2">View More</h5>
+              </div>
+            </div>
+          </div>
+        </div></a>
+      </div>
+    </section>
+
+    <!-- why us -->
+
+    <div class="container pt-5">
+      <div class="text-2">
+      <h2 class="text-center" id="whyus">Why Choose Us</h2>
+      
+      </div>
+      
+
+      <div class="row text-center pt-5 justify-content-center g-5">
+        <div class="col-md-4">
+          <div>
+            <img
+              src="./images/free.png"
+              alt="fundraise"
+              width="80px
+            "
+            />
+            <div>
+              <h5 class="mt-2 text-center">0% Platform Fee</h5>
+              <p>We are FREE. We charge no money to use our platform. We believe you should be able to keep all the money you raise. Helphify is powered by voluntary donations from Givers and Goers. Other crowdfunding sites take between 5%-10% of the money raised by a campaign.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <img src="./images/giver.png" alt="social" width="80px" />
+            <div>
+              <h5 class="mt-2">We love to give back</h5>
+              <p>Each month, Helphify designates some of our operation expenses to 'Give Back' to active campaigns on our site. We’re the only crowdfunding site that believes so much in what you’re doing that we put our money where our mouth is. We love being Givers!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div> 
+            <img src="./images/pray.png" alt="Donation" width="80px" />
+            <div>
+              <h5 class="mt-2">We Pray For You</h5>
+              <p>The most valuable currency is God’s love. Only God can meet the deepest needs of each heart. That’s why we’re grateful to have individuals and organizations dedicated to praying over our campaigns. We pray for eternal results because those are ultimately the only outcomes that matter. The God we serve will ALWAYS be bigger than money.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <img src="./images/chat.png" alt="social" width="80px" />
+            <div>
+              <h5 class="mt-2">Easy Social Research</h5>
+              <p>Share across multiple social platforms and mobile devices with just a couple clicks of a button.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <img src="./images/customer-service.png" alt="Donation" width="80px" />
+            <div>
+              <h5 class="mt-2">We Are Not Robot</h5>
+              <p>A+ rating in customers service. Real People writing real responses. No cut and paste responses from our top of the line team. We are standing by, waiting to help.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+              <!-- about -->
+
+
+    <section class="aboutwe pt-5">
+      <div class="text-2">
+        <h2 id="aboutus">About Us</h2>
+      </div>
+      
+     
+
+          <section id="about" class="pt-md-3">
+            
+              <div class="row g-0 pt-5">
+                <div class="col-md-6 align-self-center p-5">
+                  <h2>Welcome to Helphify,</h2>
+                  <h6 class="mb-4">where hope meets compassion!</h6>
+                  <p>At Helphify, we are on a mission to bridge the gap between faith and philanthropy, allowing individuals, churches, and ministries to express their Christian values through acts of love and generosity. Established in 2023, our platform is a sanctuary for those seeking to make a meaningful difference in the world.</p>
+                  <a href="./about.html" class="btn-read fw-semibold">Read More</a>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <img src="./images/friends.jpg" alt="About Image" />
+                </div>
+              </div>
+            
+          </section>
+        
+    </section> 
+    
+    <!-- testimonies -->
+
+    <section class="testimony pt-5">
+      <div class="text-2">
+        <h2>Testimonials</h2>
+      </div>
+
+
+<div class="container pt-5" id="testimonies">
+    <div id="testslider" class="carousel slide justify-content-center">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
+          <div class="row g-0">
+            <div class="col-md-6 align-self-center">
+              <img src="./images/brent.jpg" alt="About Image" />
+            </div>
+            <div class="col-md-6 align-self-center p-4">
+              <h2>Helping Brent Beron</h2>
+              <p class="mb-4 fs-6" >May 3.2023</p>
+              <p>Hello Jesus Followers: Please pray that I can help my homeless friend acquire a vehicle. He must live on the bus route which limits affordable housing. He has been sober over 4 years and was baptized at that time. He is consistently attending AA and worship. Thank you for your prayers. Dianne</p>
+              <a href="#" class="btn-2nd fw-semibold">Read More</a>
+            </div>
+          </div>
+       </div>
+       
+
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col-md-6 align-self-center">
+              <img src="./images/edr.jpg" alt="About Image" />
+            </div>
+            <div class="col-md-6 align-self-center p-4">
+              <h2>EDRs feeding program</h2>
+              <p class="mb-4 fs-6" >August 6.2023</p>
+              <p>Dear friends, thanks everyone who joined to our fundraising. Thanks for every kind words which you left for sharing this information with others. We praise the Lord for us it’s a big miracle. You are in our prayers.</p>
+              <a href="#" class="btn-2nd fw-semibold">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col-md-6 align-self-center">
+              <img src="./images/old.jpg" alt="About Image" />
+            </div>
+            <div class="col-md-6 align-self-center p-4">
+              <h2>In Loving Memory of Evenicia Mary Echevarria</h2>
+              <p class="mb-4 fs-6" >July 3.2023</p>
+              <p>
+                Thank you everyone with your donations through website and also in person.</p>
+              <a href="#" class="btn-2nd fw-semibold">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col-md-6 align-self-center">
+              <img src="./images/woamn.jpg" alt="About Image" />
+            </div>
+            <div class="col-md-6 align-self-center p-4">
+              <h2>Supporting Ana</h2>
+              <p class="mb-4 fs-6" >January 3.2023</p>
+              <p>Thank You, Jesus! The CT scans on Oct. 3rd and Oct. 20th all confirmed that the cancer has not spread anywhere else besides the original tumor and the one lymph node.</p>
+              <a href="#" class="btn-2nd fw-semibold">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testslider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testslider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> 
+
+
+
+
+
+
+
+      
+
+    <!-- footer -->
+    <footer class="footer pt-5">
+      <div class="text-foot text-center" id="text-foot">
+        <h3>Helphify, Where Help and Hope meets.</h3><br>
+        <a class="btn-btm" href="./sign_up.html">START A HELPHIFY</a>
+       </div>
+
+      <section
+          class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    
+          <div class="container">
+
+            
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="./images/logo2.1.png" alt="KodeResto Logo 2" width="180px" />
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <a href="#" id="support" class="btn-support mt-2">Support Helphify</a>
+                </div>
+                <div class="col-md-3" id="footlist">
+                  <ul class="list-unstyled" >
+                    <li class="mb-4"><a href="#">Help Center</a></li>
+                    <li class="mb-4"><a href="#">Location</a></li>
+                    <li class="mb-4"><a href="#">Testimonies</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3" id="footlist">
+                  <ul class="list-unstyled">
+                    <li class="mb-4"><a href="./contact.html">Contact Us</a></li>
+                    <li class="mb-4"><a href="#">Terms of Use</a></li>
+                    <li class="mb-4"><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h3>Search Here</h3>
+                  <form action="process.php">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        name="search"
+                        id="search"
+                        class="form-control"
+                        placeholder="Search Here"
+                      />
+                      <button class="btn btn-search">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <hr>
+
+              <p class="text-center pt-3">Copyright &copy; 2023 - Helphify</p><br>
+            
+
+
+          </div>
+      </section>
+    </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

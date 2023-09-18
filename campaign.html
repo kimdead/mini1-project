@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./btns.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Helphify</title>
+
+    <style>
+      #camptitle {
+        background: url(../mini_one/images/camp.jpg);
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        color: #fff;
+        display: inline-block;
+      }
+
+      .campsample {
+        position: absolute;
+        top: 75%;
+      }
+
+      .box {
+        padding-top: 650px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#main_menu">
+    <header class="hero">
+      <!-- Navigation -->
+      <nav
+        id="main_menu"
+        class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="./images/logo1.png" alt="Helphify Logo" width="150" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="mainMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li><a href="./index.html" class="nav-link">Home</a></li>
+              <li><a href="./about.html" class="nav-link">About</a></li>
+              <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
+
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >More</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#section-camp" class="dropdown-item">Campaigns</a>
+                  </li>
+                  <li>
+                    <a href="#categories" class="dropdown-item">Categories</a>
+                  </li>
+                  <li><a href="#whyus" class="dropdown-item">Why Us</a></li>
+                  <li>
+                    <a href="#testimonies" class="dropdown-item">Testimonies</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#contact" class="nav-link">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- content -->
+
+    <div class="camptitle position-relative d-inline-block" id="camptitle">
+      <div class="text-1">
+        <div class="col">
+          <h1 id="contactme" class="fw-bold text-center">
+            Super Typhoon Yolanda Relief in Samar
+          </h1>
+        </div>
+      </div>
+
+      <!-- card1 images and details-->
+
+      <section class="campsample position-absolute p-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col-md-7">
+            <div class="card rounded-4" style="width: 100%">
+              <div
+                id="carouselExampleFade"
+                class="carousel slide carousel-fade"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/yolanda.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/yolanda1.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/yolanda2.jpeg"
+                      class="d-block w-100 rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/yolanda3.jpg.crdownload"
+                      class="d-block w-100 rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  Rebuilding Samar after super typhoon yolanda
+                </h5>
+                <p class="card-text">
+                  In the wake of the devastating Yolanda, the resilience of the
+                  people of Samar shines through as they face the aftermath with
+                  unwavering determination. But they can't do it alone – they
+                  need a helping hand to rebuild their lives, homes, and
+                  communities.
+                </p>
+                <a href="#" class="btn btn-2nd">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- aside fund -->
+
+          <div class="col-md-5">
+            <div class="col-md">
+              <div class="card rounded-4">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md pt-5">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- updates -->
+
+          <div class="col-md-7">
+            <div class="card mb-3 rounded-4" style="max-width: 100%">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <i class="fa-regular fa-pen-to-square fa-3x"></i>
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h5 class="card-title">UPDATES</h5>
+                    <p class="card-text">
+                      <small class="text-body-secondary">update 4</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >September 5, 2023</small
+                      >
+                    </p>
+                    <p class="card-text">
+                      As Super Typhoon Yolanda (Haiyan) continues its
+                      destructive path across the central Philippines, it has
+                      already gained infamy as the strongest storm ever known to
+                      make landfall and the fourth strongest storm ever recorded
+                      in the world. <a href="#"> Read more</a>
+                    </p>
+                    <a href="#" class="btn-2nd fw-bold">FOLLOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- extra -->
+    <div class="box">
+      <a href=""></a>
+    </div>
+    <!-- footer -->
+
+    <footer class="footer pt-5">
+      <div class="text-foot text-center" id="text-foot">
+        <h3>Helphify, Where Help and Hope meets.</h3>
+        <br />
+        <a class="btn-btm" href="./sign_up.html">START A HELPHIFY</a>
+      </div>
+
+      <section
+        class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./images/logo2.1.png" alt="Logo 2" width="180px" />
+              <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+              <a href="#" id="support" class="btn-support mt-2"
+                >Support Helphify</a
+              >
+            </div>
+            <div class="col-md-3" id="footlist">
+              <ul class="list-unstyled">
+                <li class="mb-4"><a href="#">Help Center</a></li>
+                <li class="mb-4"><a href="#">Location</a></li>
+                <li class="mb-4"><a href="#">Testimonies</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3" id="footlist">
+              <ul class="list-unstyled">
+                <li class="mb-4"><a href="#">Contact Us</a></li>
+                <li class="mb-4"><a href="#">Terms of Use</a></li>
+                <li class="mb-4"><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Search Here</h3>
+              <form action="process.php">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="form-control"
+                    placeholder="Search Here"
+                  />
+                  <button class="btn btn-search">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <hr />
+
+          <p class="text-center pt-3">Copyright &copy; 2023 - Helphify</p>
+          <br />
+        </div>
+      </section>
+    </footer>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

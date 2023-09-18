@@ -1,0 +1,189 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#main_menu {
+  z-index: 5;
+}
+
+#section-camp a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+#mainMenu .nav-link {
+  color: #131212;
+  font-size: 15px;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#mainMenu .nav-link:hover {
+  background: #6487c4;
+  color: #ffffff;
+  border-radius: 5px;
+}
+#mainMenu .nav-link.active {
+  background: #6487c4;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.text-1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.hero .text-1 h1 {
+  font-size: 70px;
+}
+
+.hero .text-1 p {
+  font-size: 22px;
+}
+
+.hero .text-1 h1,
+p {
+  line-height: 70px;
+}
+
+/* ///////////////////campaigns//////////////////////////////////// */
+
+.text-2 h2 {
+  color: #6487c4;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#maincamp {
+  color: #fff;
+}
+
+.maintext {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 30px;
+}
+
+#editor {
+  transition: all 0.3s;
+  position: relative;
+}
+.editor-camp .card:hover {
+  transform: translateY(-10px);
+  opacity: 0.8;
+}
+
+.editor-camp .maintext {
+  z-index: 2;
+}
+
+#section-camp .editor-camp h5 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.editor-camp {
+  position: relative;
+}
+#editor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* steps */
+
+#get-started {
+  font-size: 55px;
+  font-weight: 700;
+}
+#ez {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+p {
+  line-height: 30px;
+}
+
+/* categories */
+
+#category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.card-img-overlay {
+  z-index: 2;
+}
+
+#category {
+  transition: all 0.3s;
+}
+#category:hover {
+  opacity: 0.7;
+}
+
+/* about */
+
+/* footer */
+#text-foot {
+  background: #28a745;
+  width: 100%;
+  padding: 100px;
+}
+
+#text-foot h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#footlist a {
+  color: #fff;
+}
+
+footer .row {
+  align-items: center;
+  text-align: center;
+}
+
+/* campaign */
+
+.camp-title {
+  background: #28a745;
+  font-size: 30px;
+}
+
+/* contact */
+
+#FAQ {
+  background: #28a745;
+}

@@ -1,0 +1,159 @@
+.btn-main {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 50px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn-2nd {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #6487c4;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.btn-read {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.btn-btm {
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 40px;
+  color: #28a745;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 350px;
+}
+
+.btn-support {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn-next {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #6487c4;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.btn-search {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #6487c4;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.text-foot a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+footer #support {
+  font-size: 14px;
+}
+
+/* :hover */
+
+.text-foot a:hover {
+  color: #fff;
+  background: rgb(36, 126, 55);
+  transition: all 0.4s;
+}
+
+.text-1 a:hover {
+  color: #fff;
+  background: #6487c4;
+  transition: all 0.4s;
+}
+
+.editor-camp a:hover {
+  color: #fff;
+  background: #28a745;
+  transition: all 0.4s;
+}
+
+.trend-camp a:hover {
+  color: #fff;
+  background: #28a745;
+  transition: all 0.4s;
+}
+
+.more a:hover {
+  color: #fff;
+  background: #6487c4;
+  transition: all 0.4s;
+}
+
+#about a:hover {
+  color: #fff;
+  background: #6487c4;
+  transition: all 0.4s;
+}
+
+.carousel-inner a:hover {
+  color: #fff;
+  background: #28a745;
+  transition: all 0.4s;
+}
+
+/* fab */
+
+.fab {
+  font-size: 19px;
+  padding: 6px;
+  color: #fff;
+}
+
+.fab:hover {
+  color: #28a745;
+}
+
+/* faqs */
+
+#faqs {
+  background: #28a745;
+  color: #fff;
+  font-size: large;
+}
+
+#faqs:hover {
+  background: #28a745;
+}
+
+/* sign up */
