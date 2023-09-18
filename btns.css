@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 10px 50px;
   color: #fff;
-  background-color: #28a745;
+  background-color: #6487c4;
   border: none;
   border-radius: 10px;
   font-size: 20px;
@@ -14,7 +14,7 @@
   display: inline-block;
   padding: 5px 40px;
   color: #fff;
-  background-color: #6487c4;
+  background-color: #bf1e2e;
   border: none;
   border-radius: 10px;
   font-size: 15px;
@@ -25,7 +25,7 @@
   display: inline-block;
   padding: 5px 40px;
   color: #fff;
-  background-color: #28a745;
+  background-color: #6487c4;
   border: none;
   border-radius: 10px;
   font-size: 15px;
@@ -35,7 +35,7 @@
   cursor: pointer;
   display: inline-block;
   padding: 20px 40px;
-  color: #28a745;
+  color: #6487c4;
   background-color: #fff;
   border: none;
   border-radius: 10px;
@@ -48,7 +48,7 @@
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-  background-color: #28a745;
+  background-color: #6487c4;
   border: none;
   border-radius: 10px;
   font-size: 20px;
@@ -57,12 +57,36 @@
 .btn-next {
   cursor: pointer;
   display: inline-block;
-  padding: 5px 40px;
+
+  color: #fff;
+  background-color: #bf1e2e;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.btn-sharepray {
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #bf1e2e;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  width: 100%;
+}
+
+.btn-give {
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 40px;
   color: #fff;
   background-color: #6487c4;
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 30px;
   width: 100%;
 }
 
@@ -88,50 +112,105 @@ footer #support {
   font-size: 14px;
 }
 
+.btn-campreader {
+  padding: 8px 20px;
+  font-size: 18px;
+  background-color: #bf1e2e;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.btn-donate {
+  padding: 8px 20px;
+  font-size: 17px;
+  background-color: #6487c4;
+  color: #fff;
+  border-radius: 50px;
+}
+
 /* :hover */
 
 .text-foot a:hover {
   color: #fff;
-  background: rgb(36, 126, 55);
+  background: #5171a8;
   transition: all 0.4s;
+}
+
+.support a:hover {
+  color: #fff;
+  background-color: #bf1e2e;
+}
+
+.btn-search {
+  color: #fff;
+  background-color: #bf1e2e;
 }
 
 .text-1 a:hover {
   color: #fff;
-  background: #6487c4;
+  background: #bf1e2e;
   transition: all 0.4s;
 }
 
 .editor-camp a:hover {
   color: #fff;
-  background: #28a745;
+  background: #6487c4;
   transition: all 0.4s;
 }
 
 .trend-camp a:hover {
   color: #fff;
-  background: #28a745;
+  background: #6487c4;
   transition: all 0.4s;
 }
 
 .more a:hover {
   color: #fff;
-  background: #6487c4;
+  background: #bf1e2e;
   transition: all 0.4s;
 }
 
 #about a:hover {
   color: #fff;
-  background: #6487c4;
+  background: #bf1e2e;
   transition: all 0.4s;
+}
+
+.btn-next :hover {
+  color: #fff;
+  background-color: #333;
 }
 
 .carousel-inner a:hover {
   color: #fff;
-  background: #28a745;
+  background: #6487c4;
   transition: all 0.4s;
 }
 
+.givee :hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn-sharepray:hover {
+  color: #fff;
+  background-color: #6487c4;
+}
+
+#campreader :hover {
+  background-color: #6487c4;
+  color: #fff;
+}
+
+.btn-donate:hover {
+  color: #fff;
+  background-color: #bf1e2e;
+}
+
+.follow :hover {
+  color: #fff;
+  background-color: #6487c4;
+}
 /* fab */
 
 .fab {
@@ -141,19 +220,19 @@ footer #support {
 }
 
 .fab:hover {
-  color: #28a745;
+  color: #6487c4;
 }
 
 /* faqs */
 
 #faqs {
-  background: #28a745;
+  background: #6487c4;
   color: #fff;
   font-size: large;
 }
 
 #faqs:hover {
-  background: #28a745;
+  background: #6487c4;
 }
 
 /* sign up */

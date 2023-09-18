@@ -20,7 +20,7 @@
 
     <style>
       #camptitle {
-        background: url(../images/camp.jpg);
+        background: url(../images/Typhoon.jpg);
         width: 100%;
         height: 60vh;
         position: relative;
@@ -28,14 +28,46 @@
         display: inline-block;
       }
 
+      .camptitle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .camptitle * {
+        z-index: 1;
+      }
+
       .campsample {
         position: absolute;
-        top: 75%;
+        top: 70%;
+      }
+
+      #camptitle h1 {
+        font-size: 60px;
+        text-align: center;
       }
 
       .box {
-        padding-top: 650px;
+        padding-top: 1200px;
         text-align: center;
+      }
+
+      .scrollable {
+        overflow-y: auto;
+        max-height: 500px;
+      }
+
+      .rounded-circle {
+        width: 65%;
+        height: 65%;
+        margin: 15px 33px;
+
+        background-color: #bf1e2e;
+        color: #fff;
       }
     </style>
   </head>
@@ -110,7 +142,7 @@
       <section class="campsample position-absolute p-5">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col-md-7">
-            <div class="card rounded-4" style="width: 100%">
+            <div class="card rounded-4 border-0" style="width: 100%">
               <div
                 id="carouselExampleFade"
                 class="carousel slide carousel-fade"
@@ -171,8 +203,8 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold">
-                  Rebuilding Samar after super typhoon yolanda
+                <h5 class="card-title fw-bold fs-3 mt-3 mb-3">
+                  Rebuilding Samar after Super Typhoon Yolanda
                 </h5>
                 <p class="card-text">
                   In the wake of the devastating Yolanda, the resilience of the
@@ -181,7 +213,34 @@
                   need a helping hand to rebuild their lives, homes, and
                   communities.
                 </p>
-                <a href="#" class="btn btn-2nd">Read More</a>
+                <div id="campreader">
+                  <a href="#" class="btn btn-campreader">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- updates -->
+
+            <div class="col-md mt-5">
+              <div class="card mb-3 rounded-4" style="max-width: 100%">
+                <div class="row g-0">
+                  <div class="col-md-3 text-center">
+                    <i class="fa-regular fa-pen-to-square fa-5x pt-3"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title fs-4 fw-bold">UPDATES</h5>
+
+                      <p class="card-text">
+                        Follow this campaign to get email notifications when the
+                        campaign owner posts an update.
+                      </p>
+                      <div class="follow">
+                        <a href="#" class="btn-campreader">Follow</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -191,58 +250,275 @@
           <div class="col-md-5">
             <div class="col-md">
               <div class="card rounded-4">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body p-5">
+                  <h5 class="card-title">
+                    Campaign Created by:
+                    <span class="fw-bold">Helphify Charities</span>
+                  </h5>
                   <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
+                    The funds from this campaign will be received by GiveSendGo
+                    Charities.
                   </p>
+
+                  <!-- goal and raised -->
+
+                  <div class="row mt-5">
+                    <div class="col-md-6 text-start">
+                      <p class="card-text">
+                        <small class="text-body-secondary">Goal:</small> PHP
+                        &#8369;1,250,000
+                      </p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <p class="card-text">
+                        <small class="text-body-secondary">Raised:</small>PHP
+                        &#8369;634,370
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="progress mt-2" role="progressbar">
+                    <div
+                      class="progress-bar text-bg-warning"
+                      style="width: 75%"
+                    >
+                      75%
+                    </div>
+                  </div>
+
+                  <!-- till here -->
+
+                  <!-- buttons -->
+
+                  <div class="givessharepray mt-4">
+                    <div class="givee">
+                      <button class="btn btn-give fw-bold mt-4">Give</button>
+                    </div>
+
+                    <button class="btn btn-sharepray fw-bold mt-4">
+                      Share
+                    </button>
+
+                    <button class="btn btn-sharepray fw-bold mt-4">Pray</button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md pt-5">
+            <!-- donations  -->
+
+            <div class="col-md pt-3">
               <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <h2 class="card-title">Donations</h2>
+                  <div class="scrollable">
+                    <!-- inside card
+                       -->
 
-          <!-- updates -->
+                    <div class="card mb-3 border-0">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Kim Delos Reyes</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >5 days ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
 
-          <div class="col-md-7">
-            <div class="card mb-3 rounded-4" style="max-width: 100%">
-              <div class="row g-0">
-                <div class="col-md-3">
-                  <i class="fa-regular fa-pen-to-square fa-3x"></i>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body">
-                    <h5 class="card-title">UPDATES</h5>
-                    <p class="card-text">
-                      <small class="text-body-secondary">update 4</small>
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary"
-                        >September 5, 2023</small
-                      >
-                    </p>
-                    <p class="card-text">
-                      As Super Typhoon Yolanda (Haiyan) continues its
-                      destructive path across the central Philippines, it has
-                      already gained infamy as the strongest storm ever known to
-                      make landfall and the fourth strongest storm ever recorded
-                      in the world. <a href="#"> Read more</a>
-                    </p>
-                    <a href="#" class="btn-2nd fw-bold">FOLLOW</a>
+                    <div class="card mb-3 border-0" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">EdR Construction</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >21 days ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div class="card mb-3 border-0" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">EdR Construction</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >21 days ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div class="card mb-3 border-0" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">EdR Construction</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >21 days ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div class="card mb-3 border-0" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Annonymous</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >1 month ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div class="card mb- border-0" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Annonymous</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >1 month ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div class="card mb-3 border-0" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="./images/circle.jpg"
+                            class="img-fluid rounded-circle"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Abigail Angeles</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-body-secondary"
+                                >1 month ago</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+
+                  <div class="row mt-5">
+                    <div class="col-md-6 text-start">
+                      <a href="#" class="btn btn-donate">View all</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <a href="#" class="btn btn-donate">See top donations</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -279,9 +555,11 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
               </div>
-              <a href="#" id="support" class="btn-support mt-2"
-                >Support Helphify</a
-              >
+              <div class="support">
+                <a href="#" id="support" class="btn-support mt-2"
+                  >Support Helphify</a
+                >
+              </div>
             </div>
             <div class="col-md-3" id="footlist">
               <ul class="list-unstyled">
