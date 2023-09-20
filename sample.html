@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        position: relative;
+      }
+
+      .overlap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(255, 0, 0, 0.5);
+        padding: 10px;
+      }
+
+      .push-down {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 255, 0.5);
+        margin-top: 30px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlap">Overlapping Element</div>
+      <div class="push-down">Content to be Pushed Down</div>
+    </div>
+  </body>
+</html>
