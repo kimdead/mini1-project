@@ -23,7 +23,7 @@ a {
 
 #section-camp a {
   text-decoration: none;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-size: 15px;
   font-weight: 550;
 }
